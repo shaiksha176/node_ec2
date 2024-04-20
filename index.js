@@ -10,7 +10,11 @@ app.use(cors("*"));
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.status(200).send({ message: "Welcome to the Express Application" });
+  res.status(200).send({ message: "Welcome to the Express Applicatin" });
+});
+
+app.get("/status", (req, res) => {
+  res.status(200).send({ message: "API is working" });
 });
 
 app.use("*", (req, res) => {
