@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 app.get("/status", (req, res) => {
   res.status(201).send({ message: "API is working fine!!!" });
-});
+  });
 
 app.get("/edit",(req,res) => {
 res.send("successfully editing using nano and vi");
