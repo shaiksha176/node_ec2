@@ -10,13 +10,18 @@ app.use(cors("*"));
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.status(200).send({ message: "Welcome to the Express Applicatin" });
+  res.status(200).send({ message: "Welcome to the Node js Applicatin" });
 });
+
 
 app.get("/status", (req, res) => {
-  res.status(200).send({ message: "API is working" });
+  res.status(201).send({ message: "API is working fine!!!" });
 });
 
+app.get("/edit",(req,res) => {
+res.send("successfully editing using nano and vi");
+
+})
 app.use("*", (req, res) => {
   res.status(404).send({
     message: "No route exists with the specified path",
