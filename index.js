@@ -22,7 +22,7 @@ app.get("/edit", (req, res) => {
 });
 
 app.get("/jenkins", (req, res) => {
-  res.send("testing jenkins integration again");
+  res.send("testing jenkins integration with docker and github");
 });
 
 app.use("*", (req, res) => {
