@@ -28,7 +28,7 @@ app.get("/jenkins", (req, res) => {
 });
 
 app.get("/update", (req, res) => {
-  res.send("add testing as well");
+  res.send("add integration testing with the pipeline option");
 });
 
 app.use("*", (req, res) => {
