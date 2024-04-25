@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/status", (req, res) => {
-  res.status(200).send({ message: "API is working super fine...." });
+  res.status(200).send({ message: "API is working just fine...." });
 });
 
 app.use("*", (req, res) => {
